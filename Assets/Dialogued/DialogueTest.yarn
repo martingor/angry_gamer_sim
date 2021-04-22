@@ -1,0 +1,23 @@
+title: Start
+tags: 
+colorID: 0
+position: -36,-57
+---
+Тестируем диалоги в ярн!
+[[Кнопка 1 |butt1]]
+[[Кнопка 2 |butt2]]
+===
+title: butt1
+tags: 
+colorID: 0
+position: 496,185
+---
+Кнопка 1 сработала!
+===
+title: butt2
+tags: 
+colorID: 0
+position: 489,-50
+---
+Кнопка 2 сработала
+===
