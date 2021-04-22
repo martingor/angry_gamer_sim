@@ -13,6 +13,14 @@ public class GameState : MonoBehaviour
 
     public bool pause = false;
 
+    public bool playing = false;
+    public GameClass game = null;
+    public float gamePercentVar = 0;
+    public int gamepPercent = 0;
+    public float gamerPercentPerSec = 1;
+    public int currentGameQuestion = 0;
+
+
     public DialogueRunner dialogue;
     public void CheckTimeForQuestion()
     {
@@ -23,6 +31,20 @@ public class GameState : MonoBehaviour
             {
                 dialogue.Add(day.dayQuestions);
                 dialogue.StartDialogue(currentDayQuestion.ToString());
+                currentDayQuestion++;
+            }
+        }
+    }
+
+    public void CheckGamePercentForQuestion()
+    {
+        if (gamepPercent <= 100)
+        {
+            if (game.percentToAsk[currentGameQuestion] == gamepPercent)
+            {
+                dialogue.Add(game.gameQuestions);
+                dialogue.StartDialogue(gamepPercent + "%");
+                currentGameQuestion++;
             }
         }
     }
@@ -38,7 +60,18 @@ public class GameState : MonoBehaviour
         {
             timevar += Time.deltaTime;
             dayTime = (int)timevar;
+            gamepPercent = (int)(timevar * gamerPercentPerSec);
+            CheckTimeForQuestion();
+            if (playing)
+            {
+                gamePercentVar += Time.deltaTime;
+                gamepPercent = (int)gamePercentVar;
+                print(gamepPercent);
+                CheckGamePercentForQuestion();
+            }
+            
         }
-        print(dayTime);
+
+        
     }
 }

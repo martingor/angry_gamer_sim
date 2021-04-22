@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Gameplay : MonoBehaviour
 {
-    [SerializeField] private GameObject windowText;
     [SerializeField] private Sprite[] background;
     [SerializeField] private GameState controller;
     public void SetupGame(int imgNumber)
@@ -14,11 +13,7 @@ public class Gameplay : MonoBehaviour
         this.gameObject.SetActive(true);
         this.gameObject.GetComponent<Image>().sprite = background[imgNumber];
         this.transform.SetAsLastSibling();
-        startQuestion();
+        controller.playing = true;
     }
 
-    void startQuestion()
-    {
-
-    }
 }

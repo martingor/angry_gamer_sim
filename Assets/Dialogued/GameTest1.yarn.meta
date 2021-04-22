@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f809415b386ce3d4bbd2d0277c91fe98
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: ru-RU
+  stringIDs:
+  - GameTest1-0-0
+  - GameTest1-1-1
+  - GameTest1-Node-2
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: f809415b386ce3d4bbd2d0277c91fe98,
+    type: 3}
+  localizations: []

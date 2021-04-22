@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 3feac03b8364abb449da0f2229e1771a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: ru-RU
+  stringIDs:
+  - GameQuestions-3%-0
+  - GameQuestions-5%-1
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 3feac03b8364abb449da0f2229e1771a,
+    type: 3}
+  localizations: []

@@ -3,6 +3,6 @@ using System;
 using Yarn.Unity;
 [Serializable] public class DayClass
 {
-    [SerializeField] public YarnProgram dayQuestions;
-    [SerializeField] public int[] timeToAsk;
+    public YarnProgram dayQuestions;
+    public int[] timeToAsk;
 }
