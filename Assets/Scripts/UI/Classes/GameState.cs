@@ -38,13 +38,16 @@ public class GameState : MonoBehaviour
 
     public void CheckGamePercentForQuestion()
     {
-        if (gamepPercent <= 100)
+        if (game.percentToAsk.Length > currentGameQuestion)
         {
-            if (game.percentToAsk[currentGameQuestion] == gamepPercent)
+            if (gamepPercent <= 100)
             {
-                dialogue.Add(game.gameQuestions);
-                dialogue.StartDialogue(gamepPercent + "%");
-                currentGameQuestion++;
+                if (game.percentToAsk[currentGameQuestion] == gamepPercent)
+                {
+                    dialogue.Add(game.gameQuestions);
+                    dialogue.StartDialogue(gamepPercent + "%");
+                    currentGameQuestion++;
+                }
             }
         }
     }

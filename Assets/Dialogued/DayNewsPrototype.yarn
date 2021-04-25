@@ -1,0 +1,36 @@
+title: 0
+tags: 
+colorID: 1
+position: 1195,-663
+---
+Давайте тестировать игру. Это первый вопрос.
+[[Если нажать сюда, получишь 100 очков |PositiveNode]]
+[[Если нажать сюда, получишь -100 очков |NegativeNode]]
+===
+title: 1
+tags: 
+colorID: 0
+position: 1197,102
+---
+Надеюсь это работает. Второй вопрос на день!
+[[Если нажать сюда, получишь 100 очков |PositiveNode]]
+[[Если нажать сюда, получишь -100 очков |NegativeNode]]
+===
+title: PositiveNode
+tags: 
+colorID: 0
+position: 1068,-289
+---
+<<set $reward to 100>>
+<<set $give_points to 1>>
+Ты получил: {$reward} очков!
+===
+title: NegativeNode
+tags: 
+colorID: 0
+position: 1288,-291
+---
+<<set $reward to -100>>
+<<set $give_points to 1>>
+ты получил: {$reward} очков!
+===

@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: a670f112fe6049e479a6cd6875b6e24a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - DayNewsPrototype-0-0
+  - DayNewsPrototype-0-1
+  - DayNewsPrototype-0-2
+  - DayNewsPrototype-1-3
+  - DayNewsPrototype-1-4
+  - DayNewsPrototype-1-5
+  - DayNewsPrototype-PositiveNode-6
+  - DayNewsPrototype-NegativeNode-7
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
