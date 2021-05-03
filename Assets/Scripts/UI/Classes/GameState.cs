@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 using Yarn.Unity;
+using Yarn;
+using TMPro;
 public class GameState : MonoBehaviour
 {
+    public int dailyPoints;
     public int internetPoints;
 
     public DayClass[] days;
     public int currentDayQuestion = 0;
 
     public int currentDay = 0;
+    public int dayEndTime = 10;
     public float timevar = 0;
     public int dayTime = 0;
 
@@ -20,8 +24,13 @@ public class GameState : MonoBehaviour
     public float gamerPercentPerSec = 1;
     public int currentGameQuestion = 0;
 
-
+    public TextMeshProUGUI clock; 
     public DialogueRunner dialogue;
+
+    public GameObject varStor;
+
+    public YarnProgram dayEndDialgoue = null;
+
     public void CheckTimeForQuestion()
     {
         DayClass day = days[currentDay];
@@ -57,6 +66,44 @@ public class GameState : MonoBehaviour
         pause = !pause;
     }
 
+    public void SetClock (string timeToSet)
+    {
+        clock.text = timeToSet;
+    }
+
+    public void CalculateTime()
+    {
+        string timeString = "";
+        int hours = 0;
+        int minutes = 0;
+
+        hours = 18 + (dayTime / 60);
+        minutes = dayTime % 60;
+        if (minutes > 9)
+        {
+            timeString = hours + ":" + minutes;
+        }
+        else timeString = hours + ":0" + minutes;
+        SetClock(timeString);
+    }
+
+    public void CheckForEndDay()
+    {
+        if (dayTime == dayEndTime)
+        {
+            varStor.GetComponent<VariableStorage>().SetValue("$daily_reward", dailyPoints);
+            dialogue.Add(dayEndDialgoue);
+            dialogue.StartDialogue("end");
+            StartNewDay();        } 
+    }
+
+    public void StartNewDay()
+    {
+        currentDay++;
+        varStor.GetComponent<VariableStorage>().SetValue("$daily_reward", 0);
+        dayTime = 0;
+        dailyPoints = 0;
+    }
     public void Update()
     {
         if (pause == false)
@@ -72,6 +119,8 @@ public class GameState : MonoBehaviour
                 print(gamepPercent);
                 CheckGamePercentForQuestion();
             }
+            CheckForEndDay(); 
+            CalculateTime();
             
         }
 

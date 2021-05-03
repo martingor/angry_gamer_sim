@@ -10,7 +10,14 @@ public class DesicionPoints : MonoBehaviour
         
         if (dialogue.GetComponent<VariableStorage>().GetValue("$give_points").AsBool)
         {
+            controller.dailyPoints += (int)dialogue.GetComponent<VariableStorage>().GetValue("$reward").AsNumber;
             controller.internetPoints += (int)dialogue.GetComponent<VariableStorage>().GetValue("$reward").AsNumber;
         }
+    }
+
+    public void ResetVars()
+    {
+        dialogue.GetComponent<VariableStorage>().SetValue("$give_points", 0);
+        dialogue.GetComponent<VariableStorage>().SetValue("$reward", 0);   
     }
 }
