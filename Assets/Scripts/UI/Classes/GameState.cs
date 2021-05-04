@@ -4,13 +4,20 @@ using Yarn;
 using TMPro;
 public class GameState : MonoBehaviour
 {
-    public int dailyPoints;
+
+    // VARS THAT SAVE 
+    public int currentDay;
+    public int gamepPercent;
+    public int currentGameQuestion;
     public int internetPoints;
+
+    // LOCAL VARS
+    public int dailyPoints;
 
     public DayClass[] days;
     public int currentDayQuestion = 0;
 
-    public int currentDay = 0;
+
     public int dayEndTime = 10;
     public float timevar = 0;
     public int dayTime = 0;
@@ -20,9 +27,9 @@ public class GameState : MonoBehaviour
     public bool playing = false;
     public GameClass game = null;
     public float gamePercentVar = 0;
-    public int gamepPercent = 0;
+
     public float gamerPercentPerSec = 1;
-    public int currentGameQuestion = 0;
+
 
     public TextMeshProUGUI clock; 
     public DialogueRunner dialogue;
@@ -31,6 +38,8 @@ public class GameState : MonoBehaviour
 
     public YarnProgram dayEndDialgoue = null;
 
+
+    //FUNCTIONS
     public void CheckTimeForQuestion()
     {
         DayClass day = days[currentDay];
@@ -116,7 +125,6 @@ public class GameState : MonoBehaviour
             {
                 gamePercentVar += Time.deltaTime;
                 gamepPercent = (int)gamePercentVar;
-                print(gamepPercent);
                 CheckGamePercentForQuestion();
             }
             CheckForEndDay(); 
@@ -126,4 +134,24 @@ public class GameState : MonoBehaviour
 
         
     }
+
+    public void Start()
+    {
+        LoadGame();
+    }
+    public void SaveGame()
+    {
+        SaveSystem.SaveProgress(this);
+    }
+
+    public void LoadGame()
+    {
+        GameData data = SaveSystem.LoadProgress();
+        currentDay = data.currentDay;
+        gamepPercent = data.gamepPercent;
+        currentGameQuestion = data.currentGameQuestion;
+        internetPoints = data.internetPoints;
+    }
+
+
 }
