@@ -19,12 +19,14 @@ public class CharacterController : MonoBehaviour
     public Bullet bullet;   
     public Bullet bullet1;   
 
-    public int maxlife;
+    public int maxlife=3;
     private int life;
-    public int ammo;
+    private int ammoCount;
+    public int maxAmmo=6;
     void Start()
     {
         life = maxlife;
+        ammoCount = maxAmmo;
         rb = GetComponent<Rigidbody2D>();
         dashTime = startDashTime;
         charScale = transform.localScale;
@@ -42,12 +44,16 @@ public class CharacterController : MonoBehaviour
                     {
                         if (Input.GetKeyDown(KeyCode.LeftArrow))
                         {
+                            
+                            LoseAmmo();
                             direction = -1;
                             charScale.x = 1;
                             Instantiate(bullet1, launchOffset.position, transform.rotation);
                         }
                         else if (Input.GetKeyDown(KeyCode.RightArrow))
                         {
+                            
+                            LoseAmmo();
                             direction = 1;
                             rb.velocity = Vector2.left * dashspeed;
                             Instantiate(bullet, launchOffset.position, transform.rotation);
@@ -93,10 +99,46 @@ public class CharacterController : MonoBehaviour
         print("collision");
         if (enemy)
         {
-            life--;
+            ReceiveDamage(); 
             Destroy(enemy.gameObject);
         }
 
         
+    }
+
+    public GameObject[] hearts;
+    public GameObject[] ammo;
+
+    public void ReceiveDamage()
+    {
+        if (life > 0)
+        {
+            hearts[life - 1].SetActive(false);
+            life--;
+            
+        }
+    }public void LoseAmmo()
+    {
+        if (ammoCount >= 0)
+        {
+            ammo[ammoCount-1].SetActive(false);
+            ammoCount--;
+            
+        }
+    }
+    public void Revive()
+    {
+        if (life < maxlife)
+        {
+            hearts[life - 1].SetActive(true);
+            life++;
+        }
+    }public void ReceiveAmmo()
+    {
+        if (ammoCount < maxAmmo)
+        {
+            ammo[ammoCount-1].SetActive(true);
+            ammoCount++;
+        }
     }
 }

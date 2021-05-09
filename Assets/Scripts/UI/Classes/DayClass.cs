@@ -5,4 +5,5 @@ using Yarn.Unity;
 {
     public YarnProgram dayQuestions;
     public int[] timeToAsk;
+    public string[] tittle;
 }

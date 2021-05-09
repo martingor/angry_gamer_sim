@@ -16,7 +16,8 @@ public class GameState : MonoBehaviour
 
     public DayClass[] days;
     public int currentDayQuestion = 0;
-
+    public GameObject notification;
+    public TextMeshProUGUI notificationTittle;
 
     public int dayEndTime = 10;
     public float timevar = 0;
@@ -31,7 +32,7 @@ public class GameState : MonoBehaviour
     public float gamerPercentPerSec = 1;
 
 
-    public TextMeshProUGUI clock; 
+    public TextMeshProUGUI clock;
     public DialogueRunner dialogue;
 
     public GameObject varStor;
@@ -40,6 +41,10 @@ public class GameState : MonoBehaviour
 
 
     //FUNCTIONS
+
+    public bool waitingForOpen = false;
+    private float waitingTime = 0;
+    public int timeToOpen = 5;
     public void CheckTimeForQuestion()
     {
         DayClass day = days[currentDay];
@@ -47,13 +52,23 @@ public class GameState : MonoBehaviour
         {
             if (day.timeToAsk[currentDayQuestion] == dayTime)
             {
+                notificationTittle.text = day.tittle[currentDayQuestion];
+                notification.SetActive(true);
                 dialogue.Add(day.dayQuestions);
-                dialogue.StartDialogue(currentDayQuestion.ToString());
-                currentDayQuestion++;
+                waitingForOpen = true;
+                waitingTime = timeToOpen;
+                
             }
         }
     }
 
+    public void StartDailyQustion()
+    {
+        waitingForOpen = false;
+        notification.SetActive(false);
+        dialogue.StartDialogue(currentDayQuestion.ToString());
+        currentDayQuestion++;
+    }
     public void CheckGamePercentForQuestion()
     {
         if (game.percentToAsk.Length > currentGameQuestion)
@@ -75,7 +90,7 @@ public class GameState : MonoBehaviour
         pause = !pause;
     }
 
-    public void SetClock (string timeToSet)
+    public void SetClock(string timeToSet)
     {
         clock.text = timeToSet;
     }
@@ -103,7 +118,8 @@ public class GameState : MonoBehaviour
             varStor.GetComponent<VariableStorage>().SetValue("$daily_reward", dailyPoints);
             dialogue.Add(dayEndDialgoue);
             dialogue.StartDialogue("end");
-            StartNewDay();        } 
+            StartNewDay();
+        }
     }
 
     public void StartNewDay()
@@ -113,6 +129,7 @@ public class GameState : MonoBehaviour
         dayTime = 0;
         dailyPoints = 0;
     }
+
     public void Update()
     {
         if (pause == false)
@@ -120,19 +137,40 @@ public class GameState : MonoBehaviour
             timevar += Time.deltaTime;
             dayTime = (int)timevar;
             gamepPercent = (int)(timevar * gamerPercentPerSec);
-            CheckTimeForQuestion();
+            
             if (playing)
             {
                 gamePercentVar += Time.deltaTime;
                 gamepPercent = (int)gamePercentVar;
                 CheckGamePercentForQuestion();
             }
-            CheckForEndDay(); 
+
+            if (waitingForOpen == true)
+            {
+                print(waitingTime);
+                if (waitingTime > 0)
+                {
+                    waitingTime -= Time.deltaTime;
+                }
+                else
+                {
+                    waitingForOpen = false;
+                    notification.SetActive(false);
+                    currentDayQuestion++;
+                    dialogue.Clear();
+                }
+            }
+            else
+            {
+                CheckTimeForQuestion();
+            }
+            CheckForEndDay();
             CalculateTime();
-            
+
         }
 
         
+
     }
 
     public void Start()
