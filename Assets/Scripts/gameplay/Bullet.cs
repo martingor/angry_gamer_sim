@@ -9,6 +9,8 @@ public class Bullet : MonoBehaviour
     public int direction = 1;
     public void Start()
     {
+        var character = FindObjectOfType<CharacterController>().transform;
+        Physics2D.IgnoreCollision(character.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         Destroy(gameObject, timeToDisappear);
     }
 
@@ -23,11 +25,16 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         var enemy = collision.collider.GetComponent<ZombieHealth>();
+       
         if (enemy)
         {
             enemy.receiveDmg();
+            Destroy(gameObject);
+        }else
+        {
+            print("collided with character");
+            Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
         }
-
-        Destroy(gameObject);
+        
     }
 }

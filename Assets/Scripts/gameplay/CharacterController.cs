@@ -16,13 +16,13 @@ public class CharacterController : MonoBehaviour
     Vector3 charScale;
 
     public Transform launchOffset;
-    public Bullet bullet;   
-    public Bullet bullet1;   
+    public Bullet bullet;
+    public Bullet bullet1;
 
-    public int maxlife=3;
+    public int maxlife = 3;
     private int life;
     private int ammoCount;
-    public int maxAmmo=6;
+    public int maxAmmo = 6;
     void Start()
     {
         life = maxlife;
@@ -42,22 +42,26 @@ public class CharacterController : MonoBehaviour
                 {
                     if (direction == 0)
                     {
-                        if (Input.GetKeyDown(KeyCode.LeftArrow))
+                        if (ammoCount > 0)
                         {
-                            
-                            LoseAmmo();
-                            direction = -1;
-                            charScale.x = 1;
-                            Instantiate(bullet1, launchOffset.position, transform.rotation);
+                            if (Input.GetKeyDown(KeyCode.LeftArrow))
+                            {
+
+                                LoseAmmo();
+                                direction = -1;
+                                charScale.x = 1;
+                                Instantiate(bullet1, launchOffset.position, transform.rotation);
+                            }
+                            else if (Input.GetKeyDown(KeyCode.RightArrow))
+                            {
+
+                                LoseAmmo();
+                                direction = 1;
+                                rb.velocity = Vector2.left * dashspeed;
+                                Instantiate(bullet, launchOffset.position, transform.rotation);
+                            }
                         }
-                        else if (Input.GetKeyDown(KeyCode.RightArrow))
-                        {
-                            
-                            LoseAmmo();
-                            direction = 1;
-                            rb.velocity = Vector2.left * dashspeed;
-                            Instantiate(bullet, launchOffset.position, transform.rotation);
-                        }
+
 
 
                     }
@@ -88,7 +92,7 @@ public class CharacterController : MonoBehaviour
                 }
             }
         }
-        
+
 
     }
 
@@ -96,14 +100,19 @@ public class CharacterController : MonoBehaviour
     {
         var enemy = collision.collider.GetComponent<ZombieHealth>();
 
-        print("collision");
+        //print("collision");
         if (enemy)
         {
-            ReceiveDamage(); 
+            print("character");
+            ReceiveDamage();
             Destroy(enemy.gameObject);
         }
+        else
+        {
+            Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+        }
 
-        
+
     }
 
     public GameObject[] hearts;
@@ -115,15 +124,16 @@ public class CharacterController : MonoBehaviour
         {
             hearts[life - 1].SetActive(false);
             life--;
-            
+
         }
-    }public void LoseAmmo()
+    }
+    public void LoseAmmo()
     {
         if (ammoCount >= 0)
         {
-            ammo[ammoCount-1].SetActive(false);
+            ammo[ammoCount - 1].SetActive(false);
             ammoCount--;
-            
+
         }
     }
     public void Revive()
@@ -133,11 +143,12 @@ public class CharacterController : MonoBehaviour
             hearts[life - 1].SetActive(true);
             life++;
         }
-    }public void ReceiveAmmo()
+    }
+    public void ReceiveAmmo()
     {
         if (ammoCount < maxAmmo)
         {
-            ammo[ammoCount-1].SetActive(true);
+            ammo[ammoCount - 1].SetActive(true);
             ammoCount++;
         }
     }
