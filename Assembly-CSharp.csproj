@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7B47177D-9F67-784B-D765-4BFF0FD54184}</ProjectGuid>
+    <ProjectGuid>{15CE7951-2FCA-7AD3-ADE8-83983B7B06EA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -104,43 +104,43 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="YarnSpinner.Unity.Editor">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/YarnSpinner.Unity.Editor.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/YarnSpinner.Unity.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="YarnSpinner.Unity">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/YarnSpinner.Unity.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/YarnSpinner.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -320,34 +320,34 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Antlr4.Runtime.Standard">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/Antlr4.Runtime.Standard.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/Antlr4.Runtime.Standard.dll</HintPath>
     </Reference>
     <Reference Include="CsvHelper">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/CsvHelper.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/CsvHelper.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/Google.Protobuf.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/System.Buffers.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Memory">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/System.Memory.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics.Vectors">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/System.Numerics.Vectors.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.TypeExtensions">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/System.Reflection.TypeExtensions.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/System.Reflection.TypeExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="YarnSpinner.Compiler">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/YarnSpinner.Compiler.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/YarnSpinner.Compiler.dll</HintPath>
     </Reference>
     <Reference Include="YarnSpinner">
-      <HintPath>C:/Users/бингус/Documents/GitHub/angry_gamer_sim/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/YarnSpinner.dll</HintPath>
+      <HintPath>C:/Users/YES Холдинг/Downloads/angry_gamer_sim (1)-20210422T081343Z-001/angry_gamer_sim (1)/Library/PackageCache/dev.yarnspinner.unity@e050b45804/Runtime/DLLs/YarnSpinner.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
