@@ -11,9 +11,16 @@ public class Gameplay : MonoBehaviour
         gameObjectsToHide.SetActive(false);
         //this.gameObject.GetComponent<Image>().sprite = background[imgNumber];
         this.transform.SetAsLastSibling();
+    }
+
+    public void StartGame() {
         controller.playing = true;
     }
 
+    public void StopGame()
+    {
+        controller.playing = false;
+    }
     public void CloseGame()
     {
         this.gameObject.SetActive(false);
