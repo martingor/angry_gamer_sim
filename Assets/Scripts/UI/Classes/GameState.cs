@@ -36,12 +36,10 @@ public class GameState : MonoBehaviour
     public DialogueRunner dialogue;
 
     public GameObject varStor;
-
     public YarnProgram dayEndDialgoue = null;
 
 
     //FUNCTIONS
-
     public bool waitingForOpen = false;
     private float waitingTime = 0;
     public int timeToOpen = 5;
@@ -61,7 +59,6 @@ public class GameState : MonoBehaviour
             }
         }
     }
-
     public void StartDailyQustion()
     {
         waitingForOpen = false;
@@ -84,17 +81,14 @@ public class GameState : MonoBehaviour
             }
         }
     }
-
     public void PauseUnpause()
     {
         pause = !pause;
     }
-
     public void SetClock(string timeToSet)
     {
         clock.text = timeToSet;
     }
-
     public void CalculateTime()
     {
         string timeString = "";
@@ -110,7 +104,6 @@ public class GameState : MonoBehaviour
         else timeString = hours + ":0" + minutes;
         SetClock(timeString);
     }
-
     public void CheckForEndDay()
     {
         if (dayTime == dayEndTime)
@@ -121,7 +114,6 @@ public class GameState : MonoBehaviour
             StartNewDay();
         }
     }
-
     public void StartNewDay()
     {
         currentDay++;
@@ -129,7 +121,6 @@ public class GameState : MonoBehaviour
         dayTime = 0;
         dailyPoints = 0;
     }
-
     public void Update()
     {
         if (pause == false)
@@ -172,7 +163,6 @@ public class GameState : MonoBehaviour
         
 
     }
-
     public void Start()
     {
         LoadGame();
@@ -181,7 +171,6 @@ public class GameState : MonoBehaviour
     {
         SaveSystem.SaveProgress(this);
     }
-
     public void LoadGame()
     {
         GameData data = SaveSystem.LoadProgress();
@@ -190,6 +179,4 @@ public class GameState : MonoBehaviour
         currentGameQuestion = data.currentGameQuestion;
         internetPoints = data.internetPoints;
     }
-
-
 }
