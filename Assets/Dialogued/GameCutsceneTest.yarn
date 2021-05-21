@@ -1,0 +1,15 @@
+title: Start
+tags: 
+colorID: 2
+position: -124,-663
+---
+Тестируем загрузку текста в кат сценах
+[[Продолжить |continue]]
+===
+title: continue
+tags: 
+colorID: 0
+position: 308,-686
+---
+Продолжаем текст
+===

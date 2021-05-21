@@ -138,7 +138,6 @@ public class GameState : MonoBehaviour
 
             if (waitingForOpen == true)
             {
-                print(waitingTime);
                 if (waitingTime > 0)
                 {
                     waitingTime -= Time.deltaTime;
