@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    private CharacterController controller;
     public float speed;
     public float timeToDisappear;
     public int direction = 1;
@@ -12,6 +13,7 @@ public class Bullet : MonoBehaviour
         var character = FindObjectOfType<CharacterController>().transform;
         Physics2D.IgnoreCollision(character.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         Destroy(gameObject, timeToDisappear);
+        controller = FindObjectOfType<CharacterController>();
     }
 
     public void Update()
@@ -28,6 +30,7 @@ public class Bullet : MonoBehaviour
        
         if (enemy)
         {
+            controller.ReceiveAmmo();
             enemy.receiveDmg();
             Destroy(gameObject);
         }else

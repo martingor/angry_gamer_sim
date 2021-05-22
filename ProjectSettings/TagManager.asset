@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - heart 1
+  - heart 2
+  - heart 3
+  - ammo 1
+  - ammo 2
+  - ammo 3
+  - ammo 4
+  - ammo 5
+  - ammo 6
   layers:
   - Default
   - TransparentFX

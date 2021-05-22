@@ -73,10 +73,6 @@
     <Compile Include="Assets\Scripts\UI\Classes\DayClass.cs" />
     <Compile Include="Assets\Scripts\UI\Classes\GameClass.cs" />
     <Compile Include="Assets\Scripts\UI\Classes\GameState.cs" />
-    <Compile Include="Assets\Scripts\UI\Gameplay Questions\Accept_answe.cs" />
-    <Compile Include="Assets\Scripts\UI\Gameplay Questions\Dialogue_button.cs" />
-    <Compile Include="Assets\Scripts\UI\Gameplay Questions\Open_question_window.cs" />
-    <Compile Include="Assets\Scripts\UI\Gameplay Questions\create_answer_screen.cs" />
     <Compile Include="Assets\Scripts\UI\StartScreen\Button_Transform_on_Hover.cs" />
     <Compile Include="Assets\Scripts\UI\StartScreen\Drag_UI.cs" />
     <Compile Include="Assets\Scripts\UI\StartScreen\Open_Window_Button.cs" />

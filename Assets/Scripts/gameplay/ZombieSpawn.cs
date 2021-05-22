@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ZombieSpawn : MonoBehaviour
 {
-    public GameState controller;
+    private GameState controller;
 
     public ZombieHealth zombie;
     private float time;
@@ -12,6 +12,7 @@ public class ZombieSpawn : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
+        controller = FindObjectOfType<GameState>();
         time = timeToSpawn;
     }
     void Update()
