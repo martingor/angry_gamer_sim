@@ -4,13 +4,14 @@ ScriptsOnlyBuild:
     - Bullet
     - Button_Transform_on_Hover
     - CharacterController
+    - CloseGame
     - Close_Window_button
     - DesicionPoints
     - Drag_UI
+    - GameInGameManager
     - GameState
     - Gameplay
     - Hide_Window_start
-    - Open_Window_Button
     - ZombieHealth
     - ZombieSpawn
     - open_game_button
@@ -57,6 +58,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
@@ -78,8 +81,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11290}
     - Class: 114
-      Script: {instanceID: 11406}
-    - Class: 114
       Script: {instanceID: 11416}
     - Class: 114
       Script: {instanceID: 11650}
@@ -92,43 +93,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11948}
     - Class: 114
-      Script: {instanceID: 12004}
+      Script: {instanceID: 12002}
     - Class: 114
-      Script: {instanceID: 12090}
+      Script: {instanceID: 12088}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 12098}
     - Class: 114
-      Script: {instanceID: 12112}
+      Script: {instanceID: 12110}
     - Class: 114
-      Script: {instanceID: 12208}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12278}
+      Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 12458}
+      Script: {instanceID: 12456}
     - Class: 114
-      Script: {instanceID: 12466}
+      Script: {instanceID: 12464}
     - Class: 114
-      Script: {instanceID: 12522}
+      Script: {instanceID: 12520}
     - Class: 114
-      Script: {instanceID: 12536}
+      Script: {instanceID: 12534}
     - Class: 114
-      Script: {instanceID: 12736}
+      Script: {instanceID: 12734}
     - Class: 114
-      Script: {instanceID: 12758}
+      Script: {instanceID: 12756}
     - Class: 114
-      Script: {instanceID: 12786}
+      Script: {instanceID: 12784}
+    - Class: 114
+      Script: {instanceID: 12794}
     - Class: 114
       Script: {instanceID: 12806}
     - Class: 114
       Script: {instanceID: 12892}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 12980}
     - Class: 114
-      Script: {instanceID: 13136}
+      Script: {instanceID: 13134}
     - Class: 114
-      Script: {instanceID: 13206}
+      Script: {instanceID: 13202}
     - Class: 114
-      Script: {instanceID: 13208}
+      Script: {instanceID: 13204}
+    - Class: 114
+      Script: {instanceID: 45522}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -174,7 +179,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 2901fda406f4e1b43be24c2eb5f4e8f3
+      Hash: 22c39ffe6b03c37c95c87f2c4add2ba4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameState
@@ -312,7 +317,7 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 85e31594bfe6d85c757e59dcd893cfd1
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Button_Transform_on_Hover
@@ -364,12 +369,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Gameplay
-  - hash:
-      serializedVersion: 2
-      Hash: 2dbf5389feb5ff2798c3f41acb676374
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Dialogue_button
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -510,12 +509,6 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 60df6a0c225a256839aa4afffd585b80
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: create_answer_screen
-  - hash:
-      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -528,13 +521,13 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 83a845341c9d0f68b4e03a9113c2857c
+      Hash: 35e3104e29c268c78b0a9222599dca56
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CharacterController
   - hash:
       serializedVersion: 2
-      Hash: 834654a924f814d925a6d134f32ee642
+      Hash: e974477644c6b3a92a91160b39a5e98a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ZombieSpawn
@@ -544,6 +537,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: bacf561256e7e37d92dc5ea7a2fc7b74
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameInGameManager
   - hash:
       serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
@@ -562,12 +561,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ZombieHealth
-  - hash:
-      serializedVersion: 2
-      Hash: e295ea1a87505407f7aed6a474534a85
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Accept_answe
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -610,12 +603,6 @@ ScriptsOnlyBuild:
     assemblyName: YarnSpinner.Unity.dll
     namespaceName: Yarn.Unity
     className: DialogueUI
-  - hash:
-      serializedVersion: 2
-      Hash: 82b7333c4105fa7eeae2e541fc59cab9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Open_question_window
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -694,6 +681,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CloseGame
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

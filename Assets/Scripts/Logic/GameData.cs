@@ -13,8 +13,6 @@ public class GameData
     public GameData(GameState data)
     {
         currentDay = data.currentDay;
-        gamepPercent = data.gamepPercent;
-        currentGameQuestion = data.currentGameQuestion;
         internetPoints = data.internetPoints;
 
 

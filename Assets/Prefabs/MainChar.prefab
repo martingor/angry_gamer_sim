@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b7700c1ac0d694097f29f827f60258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashspeed: 25
+  dashspeed: 10
   startDashTime: 0.15
   recoilTime: 1
   launchOffset: {fileID: 8774462136957030260}

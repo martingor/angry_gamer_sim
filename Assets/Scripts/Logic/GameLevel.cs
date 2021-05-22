@@ -7,6 +7,8 @@ using System;
 {
     public bool cutscene;
 
+    public string levelName;
+
     public GameObject leftSpawner;
     public GameObject rightSpawner;
 

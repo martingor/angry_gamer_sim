@@ -4,9 +4,7 @@ using UnityEngine.UI;
 
 public class Button_Transform_on_Hover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    [SerializeField] private Transform controlPanel;
-    [SerializeField] private Transform closeButton;
-    [SerializeField] private Transform wholePanel;
+    
     private Image buttImage;
     private Color standartColor;
     void Start()
@@ -25,10 +23,4 @@ public class Button_Transform_on_Hover : MonoBehaviour, IPointerEnterHandler, IP
          buttImage.color = standartColor;
     }
 
-    public void OpenStartMenu()
-    {        
-        controlPanel.position = new Vector3(controlPanel.position.x * -1, controlPanel.position.y, controlPanel.position.z);
-        closeButton.position = new Vector3(closeButton.position.x * -1, closeButton.position.y, closeButton.position.z);
-        wholePanel.SetAsLastSibling();
-    }
 }

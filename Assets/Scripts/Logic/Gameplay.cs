@@ -13,10 +13,6 @@ public class Gameplay : MonoBehaviour
         this.transform.SetAsLastSibling();
     }
 
-    public void StartGame() {
-        controller.playing = true;
-    }
-
     public void StopGame()
     {
         controller.playing = false;

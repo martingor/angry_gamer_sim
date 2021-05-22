@@ -7,8 +7,6 @@ public class GameState : MonoBehaviour
 
     // VARS THAT SAVE 
     public int currentDay;
-    public int gamepPercent;
-    public int currentGameQuestion;
     public int internetPoints;
 
     // LOCAL VARS
@@ -24,10 +22,7 @@ public class GameState : MonoBehaviour
     public int dayTime = 0;
 
     public bool pause = false;
-
     public bool playing = false;
-    public GameClass game = null;
-    public float gamePercentVar = 0;
 
     public float gamerPercentPerSec = 1;
 
@@ -65,21 +60,6 @@ public class GameState : MonoBehaviour
         notification.SetActive(false);
         dialogue.StartDialogue(currentDayQuestion.ToString());
         currentDayQuestion++;
-    }
-    public void CheckGamePercentForQuestion()
-    {
-        if (game.percentToAsk.Length > currentGameQuestion)
-        {
-            if (gamepPercent <= 100)
-            {
-                if (game.percentToAsk[currentGameQuestion] == gamepPercent)
-                {
-                    dialogue.Add(game.gameQuestions);
-                    dialogue.StartDialogue(gamepPercent + "%");
-                    currentGameQuestion++;
-                }
-            }
-        }
     }
     public void PauseUnpause()
     {
@@ -127,14 +107,6 @@ public class GameState : MonoBehaviour
         {
             timevar += Time.deltaTime;
             dayTime = (int)timevar;
-            gamepPercent = (int)(timevar * gamerPercentPerSec);
-            
-            if (playing)
-            {
-                gamePercentVar += Time.deltaTime;
-                gamepPercent = (int)gamePercentVar;
-                CheckGamePercentForQuestion();
-            }
 
             if (waitingForOpen == true)
             {
@@ -174,8 +146,6 @@ public class GameState : MonoBehaviour
     {
         GameData data = SaveSystem.LoadProgress();
         currentDay = data.currentDay;
-        gamepPercent = data.gamepPercent;
-        currentGameQuestion = data.currentGameQuestion;
         internetPoints = data.internetPoints;
     }
 }

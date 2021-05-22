@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class GameInGameManager : MonoBehaviour
 {
-
+    public GameObject preLevel;
     public GameState gameplay;
     public GameObject restartMenu;
 
@@ -33,7 +33,7 @@ public class GameInGameManager : MonoBehaviour
             dialogue.StartDialogue("Start");
         } else
         {
-            gameplay.pause = false;
+            preLevel.SetActive(true);
             foreach (GameObject heart in hearts)
                 heart.SetActive(true);
             Instantiate(currentLevel.leftSpawner, new Vector3 (leftSpawn.position.x, leftSpawn.position.y, leftSpawn.position.z) , Quaternion.identity);
@@ -47,6 +47,7 @@ public class GameInGameManager : MonoBehaviour
     }
     public void ResetGame()
     {
+
         GameObject[] destroyables = GameObject.FindGameObjectsWithTag("Respawn");
 
         foreach (GameObject game in destroyables)
@@ -61,7 +62,27 @@ public class GameInGameManager : MonoBehaviour
 
         restartMenu.SetActive(true);
     }
+    public void CompleteLevel()
+    {
 
+        GameLevel currentLevel = levels[level];
+        if (currentLevel.cutscene)
+        {
+            dialogue.Clear();
+            level++;
+        }
+        gameplay.playing = false;
+        currentLevel = levels[level];
+        LevelNameText.text = currentLevel.levelName;
+    }
+
+    public TextMeshProUGUI LevelNameText;
+    public void StartLevel()
+    {
+        preLevel.SetActive(false);
+        gameplay.playing = true;
+        gameplay.pause = false;
+    }
     public void RestartGame()
     {
         restartMenu.SetActive(false);
