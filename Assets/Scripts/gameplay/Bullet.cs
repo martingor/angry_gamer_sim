@@ -15,7 +15,6 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, timeToDisappear);
         controller = FindObjectOfType<CharacterController>();
     }
-
     public void Update()
     {
 
@@ -23,7 +22,6 @@ public class Bullet : MonoBehaviour
 
 
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         var enemy = collision.collider.GetComponent<ZombieHealth>();

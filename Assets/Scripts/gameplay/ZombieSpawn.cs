@@ -13,7 +13,7 @@ public class ZombieSpawn : MonoBehaviour
     private void Start()
     {
         controller = FindObjectOfType<GameState>();
-        time = timeToSpawn;
+        time = RestartTime();
     }
     void Update()
     {
@@ -24,7 +24,7 @@ public class ZombieSpawn : MonoBehaviour
                 if (time <= 0)
                 {
                     Instantiate(zombie, transform.position, transform.rotation);
-                    time = timeToSpawn;
+                    time = RestartTime();
                 }
                 else
                 {
@@ -32,8 +32,10 @@ public class ZombieSpawn : MonoBehaviour
                 }
             }
         }
-
         
-        
+    }
+    private float RestartTime()
+    {
+        return Random.Range(0.5f, timeToSpawn);
     }
 }

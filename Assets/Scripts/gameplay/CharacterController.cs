@@ -44,6 +44,11 @@ public class CharacterController : MonoBehaviour
         {
             if (!controller.pause)
             {
+                if(life == 0)
+                {
+                    manager.ResetGame();
+                    
+                }
                 manager.ShowAmmoCount(ammoCount, maxAmmo);
                 transform.localScale = charScale;
                 {
