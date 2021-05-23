@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BrowserMessage.cs" />
     <Compile Include="Assets\ChangeTextColorOnHover.cs" />
     <Compile Include="Assets\CloseGame.cs" />
     <Compile Include="Assets\Scripts\Logic\DesicionPoints.cs" />

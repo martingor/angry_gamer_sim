@@ -9,8 +9,6 @@ public class Gameplay : MonoBehaviour
     {
         this.gameObject.SetActive(true);
         gameObjectsToHide.SetActive(false);
-        //this.gameObject.GetComponent<Image>().sprite = background[imgNumber];
-        this.transform.SetAsLastSibling();
     }
 
     public void StopGame()

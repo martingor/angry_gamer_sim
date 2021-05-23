@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombie: {fileID: 754213121981202152, guid: cdb550d3f341edd429af633aea207a27, type: 3}
-  timeToSpawn: 3
+  timeToSpawn: 2
