@@ -67,6 +67,7 @@
     <Compile Include="Assets\BrowserMessage.cs" />
     <Compile Include="Assets\ChangeTextColorOnHover.cs" />
     <Compile Include="Assets\CloseGame.cs" />
+    <Compile Include="Assets\Dialogued\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Logic\DesicionPoints.cs" />
     <Compile Include="Assets\Scripts\Logic\GameData.cs" />
     <Compile Include="Assets\Scripts\Logic\GameInGameManager.cs" />
