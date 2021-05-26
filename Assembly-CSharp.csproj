@@ -64,29 +64,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BrowserMessage.cs" />
-    <Compile Include="Assets\ChangeTextColorOnHover.cs" />
-    <Compile Include="Assets\CloseGame.cs" />
-    <Compile Include="Assets\Dialogued\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\Classes\DayClass.cs" />
+    <Compile Include="Assets\Scripts\Classes\GameClass.cs" />
+    <Compile Include="Assets\Scripts\Classes\GameData.cs" />
+    <Compile Include="Assets\Scripts\Classes\GameLevel.cs" />
+    <Compile Include="Assets\Scripts\Classes\GameState.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\CharacterController.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\ZombieHealth.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\ZombieSpawn.cs" />
     <Compile Include="Assets\Scripts\Logic\DesicionPoints.cs" />
-    <Compile Include="Assets\Scripts\Logic\GameData.cs" />
     <Compile Include="Assets\Scripts\Logic\GameInGameManager.cs" />
-    <Compile Include="Assets\Scripts\Logic\GameLevel.cs" />
     <Compile Include="Assets\Scripts\Logic\Gameplay.cs" />
     <Compile Include="Assets\Scripts\Logic\SaveSystem.cs" />
-    <Compile Include="Assets\Scripts\UI\Classes\DayClass.cs" />
-    <Compile Include="Assets\Scripts\UI\Classes\GameClass.cs" />
-    <Compile Include="Assets\Scripts\UI\Classes\GameState.cs" />
-    <Compile Include="Assets\Scripts\UI\StartScreen\Button_Transform_on_Hover.cs" />
-    <Compile Include="Assets\Scripts\UI\StartScreen\Drag_UI.cs" />
-    <Compile Include="Assets\Scripts\UI\StartScreen\Open_Window_Button.cs" />
-    <Compile Include="Assets\Scripts\UI\StartScreen\open_game_button.cs" />
-    <Compile Include="Assets\Scripts\UI\UI\Close_Window_button.cs" />
-    <Compile Include="Assets\Scripts\UI\UI\Hide_Window_start.cs" />
-    <Compile Include="Assets\Scripts\gameplay\Bullet.cs" />
-    <Compile Include="Assets\Scripts\gameplay\CharacterController.cs" />
-    <Compile Include="Assets\Scripts\gameplay\ZombieHealth.cs" />
-    <Compile Include="Assets\Scripts\gameplay\ZombieSpawn.cs" />
+    <Compile Include="Assets\Scripts\UI\BrowserMessage.cs" />
+    <Compile Include="Assets\Scripts\UI\Button_Transform_on_Hover.cs" />
+    <Compile Include="Assets\Scripts\UI\ChangeTextColorOnHover.cs" />
+    <Compile Include="Assets\Scripts\UI\CloseGame.cs" />
+    <Compile Include="Assets\Scripts\UI\Close_Window_button.cs" />
+    <Compile Include="Assets\Scripts\UI\Drag_UI.cs" />
+    <Compile Include="Assets\Scripts\UI\Hide_Window_start.cs" />
+    <Compile Include="Assets\Scripts\UI\Open_Window_Button.cs" />
+    <Compile Include="Assets\Scripts\UI\open_game_button.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />

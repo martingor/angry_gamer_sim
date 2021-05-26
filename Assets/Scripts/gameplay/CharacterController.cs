@@ -159,7 +159,6 @@ public class CharacterController : MonoBehaviour
     {
         if (ammoCount < maxAmmo)
         {
-            print(ammoCount);
 
             ammoCount++;
         }

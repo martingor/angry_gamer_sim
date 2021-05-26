@@ -13,11 +13,18 @@ ScriptedImporter:
   - DayNewsPrototype-0-0
   - DayNewsPrototype-0-1
   - DayNewsPrototype-0-2
-  - DayNewsPrototype-1-3
+  - DayNewsPrototype-0-3
   - DayNewsPrototype-1-4
   - DayNewsPrototype-1-5
-  - DayNewsPrototype-PositiveNode-6
-  - DayNewsPrototype-NegativeNode-7
+  - DayNewsPrototype-1-6
+  - DayNewsPrototype-1-7
+  - DayNewsPrototype-PositiveNode-8
+  - DayNewsPrototype-PositiveNode-9
+  - DayNewsPrototype-NegativeNode-10
+  - DayNewsPrototype-NegativeNode-11
+  - DayNewsPrototype-neutral-12
+  - DayNewsPrototype-Goodgames-13
+  - DayNewsPrototype-Goodgames-14
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 

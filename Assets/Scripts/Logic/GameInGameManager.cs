@@ -5,6 +5,10 @@ using UnityEngine.UI;
 using TMPro;
 public class GameInGameManager : MonoBehaviour
 {
+    public bool surviving = false;
+    public float timeToSurvive;
+    public float inGameTime;
+
     public GameObject preLevel;
     public GameState gameplay;
     public GameObject restartMenu;
@@ -28,6 +32,7 @@ public class GameInGameManager : MonoBehaviour
 
         if (currentLevel.cutscene == true)
         {
+            print("cutscene detected");
             dialogue.Add(currentLevel.dialogue);
             dialogueImage.GetComponent<Image>().sprite = currentLevel.imageForDialogue;
             dialogue.StartDialogue("Start");
@@ -39,6 +44,7 @@ public class GameInGameManager : MonoBehaviour
             Instantiate(currentLevel.leftSpawner, new Vector3 (leftSpawn.position.x, leftSpawn.position.y, leftSpawn.position.z) , Quaternion.identity);
             Instantiate(currentLevel.rightSpawner, new Vector3(rightSpawn.position.x, rightSpawn.position.y, rightSpawn.position.z), Quaternion.identity);
             Instantiate(Player, new Vector3(playerSpawn.position.x, playerSpawn.position.y, playerSpawn.position.z), Quaternion.identity);
+            
         }
     }
     public void ShowAmmoCount(int ammo, int maxAmmo)
@@ -58,17 +64,24 @@ public class GameInGameManager : MonoBehaviour
 
         gameplay.pause = true;
 
-        
+        surviving = false;
 
         restartMenu.SetActive(true);
     }
     public void CompleteLevel()
     {
-
         GameLevel currentLevel = levels[level];
         if (currentLevel.cutscene)
         {
             dialogue.Clear();
+            level++;
+        } else
+        {
+            GameObject[] destroyables = GameObject.FindGameObjectsWithTag("Respawn");
+            foreach (GameObject game in destroyables)
+                GameObject.Destroy(game);
+            CharacterController character = FindObjectOfType<CharacterController>();
+            GameObject.Destroy(character);
             level++;
         }
         gameplay.playing = false;
@@ -82,10 +95,30 @@ public class GameInGameManager : MonoBehaviour
         preLevel.SetActive(false);
         gameplay.playing = true;
         gameplay.pause = false;
+        surviving = true;
+        inGameTime = timeToSurvive;
     }
     public void RestartGame()
     {
         restartMenu.SetActive(false);
         openGame();
+    }
+
+    public void Update()
+    {
+        if (surviving)
+        {
+            //print(inGameTime);
+            inGameTime -= Time.deltaTime;
+            if (inGameTime < 0)
+            {
+                surviving = false;
+
+                CompleteLevel();
+
+            }
+        }
+
+        
     }
 }
