@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Classes\DayClass.cs" />
     <Compile Include="Assets\Scripts\Classes\GameClass.cs" />
     <Compile Include="Assets\Scripts\Classes\GameData.cs" />
@@ -73,6 +74,11 @@
     <Compile Include="Assets\Scripts\Gameplay\CharacterController.cs" />
     <Compile Include="Assets\Scripts\Gameplay\ZombieHealth.cs" />
     <Compile Include="Assets\Scripts\Gameplay\ZombieSpawn.cs" />
+=======
+    <Compile Include="Assets\BrowserMessage.cs" />
+    <Compile Include="Assets\ChangeTextColorOnHover.cs" />
+    <Compile Include="Assets\CloseGame.cs" />
+>>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
     <Compile Include="Assets\Scripts\Logic\DesicionPoints.cs" />
     <Compile Include="Assets\Scripts\Logic\GameInGameManager.cs" />
     <Compile Include="Assets\Scripts\Logic\Gameplay.cs" />

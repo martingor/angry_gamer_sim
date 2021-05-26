@@ -115,7 +115,11 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 11233
+=======
+  controlID: 42887
+>>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +144,11 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 11279
+=======
+  controlID: 42892
+>>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +173,11 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 11280
+=======
+  controlID: 42893
+>>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,8 +308,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 404
     y: 19
+<<<<<<< HEAD
     width: 961
     height: 400
+=======
+    width: 962
+    height: 404
+>>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewsNames: []
   m_SerializedViewsValues: []
@@ -390,10 +407,17 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 165}
       m_SelectedIDs: febcffff
       m_LastClickedID: 0
       m_ExpandedIDs: 6cfbffffac340000e03400000235000044350000683500000a3600006036000068360000f23600006a3700007e370000843700003a3800004c380000a6380000
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 24380000
+      m_LastClickedID: 0
+      m_ExpandedIDs: ae97ffffd699ffff08a1ffff50a8ffff1cacffff04b5ffffe4b9ffffd4bcffff30f5ffff6cfbffff9c340000ea3400002c35000022360000ec3600005a3700007c370000b0370000e0370000
+>>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -597,20 +621,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
   - Assets
+=======
+    - Assets/Prefabs
+  m_ViewMode: 1
+  m_StartGridSize: 46
+  m_LastFolders:
+  - Assets/Prefabs
+>>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
   m_LastFoldersGridSize: 46
   m_LastProjectPath: "C:\\Users\\\u0431\u0438\u043D\u0433\u0443\u0441\\Documents\\GitHub\\angry_gamer_sim"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: f4390000
     m_LastClickedID: 14836
     m_ExpandedIDs: 00000000f4390000f6390000f8390000fa39000000ca9a3b
+=======
+    m_SelectedIDs: 3e390000
+    m_LastClickedID: 14654
+    m_ExpandedIDs: 000000002e39000030390000323900003439000000ca9a3b
+>>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -638,7 +676,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000f4390000f6390000f8390000fa39000000ca9a3b
+=======
+    m_ExpandedIDs: 000000002e39000030390000323900003439000000ca9a3b
+>>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -757,4 +799,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 457
