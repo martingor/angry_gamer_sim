@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -112,14 +112,18 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 679, y: 471}
+  m_MaxSize: {x: 14001, y: 14021}
   vertical: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   controlID: 11233
 =======
   controlID: 42887
 >>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
+=======
+  controlID: 325
+>>>>>>> Stashed changes
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,14 +145,18 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 947
-  m_MinSize: {x: 402, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 403, y: 471}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   controlID: 11279
 =======
   controlID: 42892
 >>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
+=======
+  controlID: 326
+>>>>>>> Stashed changes
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,14 +178,18 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 421
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   controlID: 11280
 =======
   controlID: 42893
 >>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
+=======
+  controlID: 327
+>>>>>>> Stashed changes
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -407,6 +419,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       scrollPos: {x: 0, y: 165}
       m_SelectedIDs: febcffff
@@ -418,6 +431,12 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: ae97ffffd699ffff08a1ffff50a8ffff1cacffff04b5ffffe4b9ffffd4bcffff30f5ffff6cfbffff9c340000ea3400002c35000022360000ec3600005a3700007c370000b0370000e0370000
 >>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: fe360000
+      m_LastClickedID: 14078
+      m_ExpandedIDs: 6cfbffff4835000050370000
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -477,9 +496,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1438.1206, y: 36.706726, z: -365.47836}
+    m_Target: {x: 286.6802, y: 189.35959, z: -514.25}
     speed: 2
-    m_Value: {x: 1519.3396, y: 36.443596, z: -359.5199}
+    m_Value: {x: 286.6802, y: 189.35959, z: -514.25}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -529,9 +548,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1580.285
+    m_Target: 437.74356
     speed: 2
-    m_Value: 1654.7488
+    m_Value: 437.74356
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -621,6 +640,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     - Assets
   m_ViewMode: 1
@@ -634,12 +654,20 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Prefabs
 >>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
+=======
+    - Assets/Scripts/UI
+  m_ViewMode: 1
+  m_StartGridSize: 46
+  m_LastFolders:
+  - Assets/Scripts/UI
+>>>>>>> Stashed changes
   m_LastFoldersGridSize: 46
   m_LastProjectPath: "C:\\Users\\\u0431\u0438\u043D\u0433\u0443\u0441\\Documents\\GitHub\\angry_gamer_sim"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     m_SelectedIDs: f4390000
     m_LastClickedID: 14836
@@ -649,6 +677,11 @@ MonoBehaviour:
     m_LastClickedID: 14654
     m_ExpandedIDs: 000000002e39000030390000323900003439000000ca9a3b
 >>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
+=======
+    m_SelectedIDs: 4a3a0000
+    m_LastClickedID: 14922
+    m_ExpandedIDs: 00000000443a0000463a0000483a00004a3a000000ca9a3b
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,11 +709,15 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     m_ExpandedIDs: 00000000f4390000f6390000f8390000fa39000000ca9a3b
 =======
     m_ExpandedIDs: 000000002e39000030390000323900003439000000ca9a3b
 >>>>>>> parent of 79db2b7 (Fixed bunch of stuff)
+=======
+    m_ExpandedIDs: 00000000443a0000463a0000483a00004a3a000000ca9a3b
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -759,7 +796,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 494
-    width: 1366
+    width: 1365
     height: 505
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &18

@@ -21,7 +21,7 @@ public class GameInGameManager : MonoBehaviour
     public GameObject Player;
 
     public GameObject[] hearts;
-
+    public GameObject worspace;
     public int level = 0;
     public GameLevel[] levels;
     public GameObject dialogueImage;
@@ -70,23 +70,40 @@ public class GameInGameManager : MonoBehaviour
     }
     public void CompleteLevel()
     {
-        GameLevel currentLevel = levels[level];
-        if (currentLevel.cutscene)
+        if (level+1 == levels.Length)
         {
-            dialogue.Clear();
-            level++;
+            worspace.SetActive(true);
+            worspace.transform.SetAsLastSibling();
         } else
         {
-            GameObject[] destroyables = GameObject.FindGameObjectsWithTag("Respawn");
-            foreach (GameObject game in destroyables)
-                GameObject.Destroy(game);
-            CharacterController character = FindObjectOfType<CharacterController>();
-            GameObject.Destroy(character);
-            level++;
+            GameLevel currentLevel = levels[level];
+            if (currentLevel.cutscene)
+            {
+                dialogue.Clear();
+                level++;
+                gameplay.playing = false;
+                currentLevel = levels[level];
+                LevelNameText.text = currentLevel.levelName;
+                
+            }
+            else
+            {
+                GameObject[] destroyables = GameObject.FindGameObjectsWithTag("Respawn");
+                foreach (GameObject game in destroyables)
+                    GameObject.Destroy(game);
+                CharacterController character = FindObjectOfType<CharacterController>();
+                GameObject.Destroy(character);
+                level++;
+                gameplay.playing = false;
+                currentLevel = levels[level];
+                LevelNameText.text = currentLevel.levelName;
+                openGame();
+            }
+            
         }
-        gameplay.playing = false;
-        currentLevel = levels[level];
-        LevelNameText.text = currentLevel.levelName;
+        
+
+
     }
 
     public TextMeshProUGUI LevelNameText;

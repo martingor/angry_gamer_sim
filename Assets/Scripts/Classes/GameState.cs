@@ -94,12 +94,22 @@ public class GameState : MonoBehaviour
             StartNewDay();
         }
     }
+
+    public GameObject gameEnd;
     public void StartNewDay()
     {
-        currentDay++;
-        varStor.GetComponent<VariableStorage>().SetValue("$daily_reward", 0);
-        dayTime = 0;
-        dailyPoints = 0;
+        if (currentDay+1 == days.Length)
+        {
+            gameEnd.SetActive(true);
+        }
+        else
+        {
+            currentDay++;
+            varStor.GetComponent<VariableStorage>().SetValue("$daily_reward", 0);
+            dayTime = 0;
+            dailyPoints = 0;
+        }
+        
     }
     public void Update()
     {
